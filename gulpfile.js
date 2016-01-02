@@ -12,7 +12,7 @@ gulp.task('server', function() {
 
 gulp.task('serverlive', function() {
 	connect.server({
-		root: 'dest',
+		root: '.',
 		livereload: true
 	});
 });
