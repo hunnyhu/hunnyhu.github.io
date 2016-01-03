@@ -22,7 +22,7 @@ gulp.task('copylive', function() {
 	.pipe(connect.reload());
 });
 gulp.task('watchlive', function() {
-	gulp.watch('index.html', ['copylive']);
+	gulp.watch(['index.html', 'src/**/*.css', 'src/**/*.js'], ['copylive']);
 });
 gulp.task('defaultlive', ['serverlive', 'watchlive']);
 
